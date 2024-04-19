@@ -1,5 +1,7 @@
 const express = require('express')
 const app = express()
+require('./routes/authRoutes')(app)
+require('./services/passport')
 
 app.get('/', (req, res) => {
   res.send({ hi: 'there' })

@@ -1,1 +1,8 @@
+# Hidden files
+.env
+
+# Folders
 node_modules
+
+# Files
+keys.js
