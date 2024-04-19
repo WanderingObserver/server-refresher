@@ -1,3 +1,6 @@
+// Dynamically exports key:value pairs from our .env file. 
+// (.env file is never pushed to repo because it holds sensitive security information.)
+
 const dotenv = require('dotenv');
 const result = dotenv.config();
 
