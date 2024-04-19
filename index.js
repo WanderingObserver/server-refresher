@@ -9,6 +9,11 @@ const keys = require('./config/keys')
 
 mongoose.connect(keys.mongoURI)
 
+app.use(cookieSession({ 
+  maxAge: 30 * 24 * 60 * 60 * 1000, 
+  keys: [keys.cookieKey]
+}))
+
 app.get('/', (req, res) => {
   res.send({ 
     hi: "You're probably getting hacked right now ;). JK!~ Or am I? Sleep with one eye open. Unless you're one eye'd Jack. Jack-o-lantern. Carve ye another eye and a heart. Tear my heart open just to feel.",
