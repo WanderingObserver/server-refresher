@@ -2,6 +2,10 @@ const express = require('express')
 const app = express()
 require('./routes/authRoutes')(app)
 require('./services/passport')
+const mongoose = require('mongoose')
+const keys = require('./config/keys')
+
+mongoose.connect(keys.mongoURI)
 
 app.get('/', (req, res) => {
   res.send({ hi: 'there' })
