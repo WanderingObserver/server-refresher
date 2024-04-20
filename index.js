@@ -27,7 +27,6 @@ app.get('/', (req, res) => {
     papa_roach: "Drunk and I'm feeling down. And I just want to be alone.",
     sora: "I've been having these weird thoughts lately. Like is any of this real or not?", 
     hikaru_utada: "When we are older you'll understand. What I meant when I said, 'いいえ、人生はそれほど単純ではないと思います.'",
-    process: process.env
   })
 })
 
